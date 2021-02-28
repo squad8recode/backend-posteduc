@@ -2,7 +2,7 @@
 
   require_once('./conexao.php');
 
-  $select = "select * from evento where verificado = true limit 4;";
+  $select = "select * from evento where verificado = true  order by id_evento desc limit 4 ;";
 
   $resp = mysqli_query($conexao,$select);
 

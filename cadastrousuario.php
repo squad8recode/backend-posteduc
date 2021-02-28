@@ -12,8 +12,8 @@ $bairro = $_POST['bairro'];
 $cidade = $_POST['cidade'];
 $uf = $_POST['uf'];
 $escola = base64_encode($_POST['escola']);
-$ano_letivo =$_POST['ano_letivo'];
-$tipo_escola = $_POST['tipo_escola'];
+$ano_letivo = base64_encode($_POST['ano_letivo']);
+$tipo_escola = base64_encode($_POST['tipo_escola']);
 $nome_usuario = $_POST['nome_usuario'];
 $senha = md5($_POST['senha']);
 
